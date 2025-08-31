@@ -1,0 +1,112 @@
+
+body{
+   margin: 0px;
+}
+
+.button {
+    display: inline-block;
+    background: #ff9a56;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;rr
+}
+
+.button:hover {
+    background: #ffc107;
+}
+header {
+    background: linear-gradient(90deg, #00000099, grey);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hightlight{
+   color: #ff9a56;
+}
+.head .container{
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.topic-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #ff9a56;
+    text-decoration: none;
+    font-weight: bold;
+}
+#lessons{
+   //margin: 20px;
+   padding: 1.5rem;
+}
+
+footer{
+   background: black;
+   width: 100%;
+   text-align: center;
+   color: white;
+   padding: 1.5rem 0;
+   margin-top: 2rem;
+}
+.title{
+   color: #ff9a56;
+}
+.lesson-content{
+   padding: 20px;
+}
+
+.lesson-content h3{
+   color: #ff9a56;
+   font-weight: bold;
+}
+.lesson{
+   background: #c9c9c9;
+   padding: 10px;
+   //width: 80%;
+   box-shadow:0 2px 4px #939393;
+   //text-align: center;
+   border-radius: 10px;
+   //margin: 10px;
+   //margin-left: 20px;
+   //margin-right: 20px;
+}
+.example{
+   background: white;
+   border-radius: 10px;
+   color: black;
+   padding: 10px;
+   margin-top: 10px;
+   box-shadow: 0 2px 5px grey;
+   text-align: center;
+   border-left: 4px solid black;
+}
+
+.answer{
+   color: #628866;
+}
