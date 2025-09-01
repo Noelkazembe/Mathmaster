@@ -1,6 +1,12 @@
 
 body{
    margin: 0px;
+   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+   font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 .button {
@@ -18,8 +24,8 @@ body{
     background: #ffc107;
 }
 header {
-    background: linear-gradient(90deg, #00000099, grey);
-    color: white;
+    background: linear-gradient(200deg, #466ed3 0%, #f5f7fa 100%);
+    color:#1f1f1f ;
     text-align: center;
     padding: 60px 0;
     margin-bottom: 20px;
@@ -36,19 +42,22 @@ header h1 {
 
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
 .topics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
+}
+@media (min-width: 768px) {
+  .topics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 13px rgba(0,0,0,0.15);
+  background: #fdfcfc;
+  font-weight: bold;
 }
 
 .topic-card {
@@ -77,25 +86,46 @@ footer{
 .title{
    color: #ff9a56;
 }
+
+/*factorisation page*/
 .lesson-content{
-   padding: 20px;
+   padding: 0px;
 }
 
 .lesson-content h3{
    color: #ff9a56;
    font-weight: bold;
 }
-.lesson{
-   background: #c9c9c9;
-   padding: 10px;
-   //width: 80%;
-   box-shadow:0 2px 4px #939393;
-   //text-align: center;
-   border-radius: 10px;
-   //margin: 10px;
-   //margin-left: 20px;
-   //margin-right: 20px;
+
+.explanation h3{
+   color: blue;
+   font-weight: bold;
 }
+
+.explanation p{
+   padding-left: 30px;
+}
+
+.explanation {
+   background: #f0eeee;
+   padding: 10px;
+   width: 90%;
+   box-shadow:0 2px 4px #939393;
+   border-radius: 10px;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   
+}
+.lesson{
+   background: #f0eeee;
+   padding: 10px;
+   width: 90%;
+   box-shadow:0 2px 4px #939393;
+   border-radius: 10px;
+   margin: 0 auto;
+   margin-bottom: 10px;
+}
+
 .example{
    background: white;
    border-radius: 10px;
@@ -109,4 +139,20 @@ footer{
 
 .answer{
    color: #628866;
+}
+
+/*matrix page*/
+.samples{
+   margin: 0 auto;
+   width: 90%;
+   box-shadow: 0 5px 5px #b5a7a7;
+   padding: 10px;
+   border-radius: 5px;
+}
+.contents {
+   //border-left: 5px solid black;
+   background: #c0c4a6;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 1px 5px 5px #9c9c9c;
 }
