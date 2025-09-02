@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+   <title>Math Master| matrices</title>
+</head>
+<body>
+   <header class="head">
+      <div class="container">
+         <h1 class="title">Matrices</h1>
+         <p>
+            A matrix is a rectangular array of numbers or expressions arranged in rows and columns.
+         </p>
+
+      </div>
+   </header>
+   <section class="lesson-content">
+
+      <div class="explanation">
+         <h3>Explanation</h3>
+         <p>
+            The order of a matrix represents the number of row or columns it has. The rows are listed first.<br> For example , matrix A is of 2 × 3, means it has 2 rows and 3 columns.
+         </p>
+      </div>
+
+      <div class="lesson">
+         <h3>Criteria</h3>
+         <ul>
+            <li>Adding matrices</li>
+            <li>Subtracting matrices</li>
+            <li>Multiplying matrices</li>
+            <li>Dividing matrices</li>
+         </ul>
+      </div>
+
+      <div class="samples">
+         <h1>1. ADDITION OF MATRICES</h1>
+         <div class="contents">
+            <p>
+               $$
+               A =
+               \begin{pmatrix}
+               a & b\\
+               c & d
+               \end{pmatrix}
+               ,  B =
+               \begin{pmatrix}
+               e & f\\
+               g & h
+               \end{pmatrix}
+               $$
+               solve A + B
+               <br>
+               <br>
+               1. write the matrix as:
+            </p>
+            <p>
+               $$
+               =
+               \begin{pmatrix}
+               a & b\\
+               c & d
+               \end{pmatrix}
+               +
+               \begin{pmatrix}
+               e & f\\
+               g & h
+               \end{pmatrix}
+               $$
+               <br>
+               2. Add the corresponding elements
+               $$
+               = \begin{pmatrix}
+               a + e & b + f\\
+               c + g & d + h
+               \end{pmatrix}
+               $$
+            </p>
+         </div>
+
+         <h3>Example1</h3>
+         <div class="contents">
+            <p>
+               Given that A = \(\begin{pmatrix} 3 & 7\\ 4 & 2 \end{pmatrix}\)
+               and B = \(\begin{pmatrix} 6 & 1\\ 3 & 9 \end{pmatrix}\). Find A + B
+
+               $$
+               =
+               \begin{pmatrix}
+               3 & 7\\
+               4 & 2
+               \end{pmatrix}
+               +
+               \begin{pmatrix}
+               6 & 1\\
+               3 & 9
+               \end{pmatrix}
+               $$
+
+               $$
+               =
+               \begin{pmatrix}
+               3 + 6 & 7 + 1\\
+               4 + 3 & 2 + 9
+               \end{pmatrix}
+               $$
+
+               $$
+               =
+               \begin{pmatrix}
+               9 & 8\\
+               7 & 11
+               \end{pmatrix}
+               $$
+            </p>
+         </div>
+         <h3>Example 2</h3>
+         <div class="contents">
+            <p>
+               A = \(\begin{pmatrix} x & 4\\ 1 & 5 \end{pmatrix}\)
+               , B = \(\begin{pmatrix} 8 & 3\\ 6 & y \end{pmatrix}\) and C =
+               \(\begin{pmatrix} 10 & 7\\ 7 & 8 \end{pmatrix}\). Given that A + B
+               = C. Find the value of x and y.
+
+               $$
+
+               \begin{pmatrix}
+               x & 4\\
+               1 & 5
+               \end{pmatrix}
+               +
+               \begin{pmatrix}
+               8 & 3\\
+               6 & y
+               \end{pmatrix}
+               =
+               \begin{pmatrix}
+               10 & 7\\
+               7 & 8
+               \end{pmatrix}
+               $$
+
+               $$
+
+               \begin{pmatrix}
+               x + 8 & 4 + 3\\
+               1 + 6 & 5 + y
+               \end{pmatrix}
+               =
+               \begin{pmatrix}
+               10 & 7\\
+               7 & 8
+               \end{pmatrix}
+               $$
+
+               $$
+               \begin{pmatrix}
+               x + 8 & 7\\
+               7 & 5 + y
+               \end{pmatrix}
+               =
+               \begin{pmatrix}
+               10 & 7\\
+               7 & 8
+               \end{pmatrix}
+               $$
+               \( x + 8 = 10 \)<br>
+               \(x = 10 - 8\)<br>
+               \(x = 2\)<br>
+               <br>
+               \(5 + y = 8\)<br>
+               \(y = 8 - 5\)<br>
+               \(y = 3\)<br>
+
+            </p>
+         </div>
+      </div>
+      <div class="samples">
+         <br>
+         <h1>2. SUBTRACTION OF MATRICES</h1>
+         <div class="contents">
+            <p>
+               $$
+               A =
+               \begin{pmatrix}
+               a & b\\
+               c & d
+               \end{pmatrix}
+               ,  B =
+               \begin{pmatrix}
+               e & f\\
+               g & h
+               \end{pmatrix}
+               $$
+               solve A - B
+               <br>
+               <br>
+               1. write the matrix as:
+            </p>
+            <p>
+               $$
+               =
+               \begin{pmatrix}
+               a & b\\
+               c & d
+               \end{pmatrix}
+               -
+               \begin{pmatrix}
+               e & f\\
+               g & h
+               \end{pmatrix}
+               $$
+               <br>
+               2. Subtract the corresponding elements
+               $$
+               = \begin{pmatrix}
+               a - e & b - f\\
+               c - g & d - h
+               \end{pmatrix}
+               $$
+            </p>
+         </div>
+         <h3>Example 1</h3>
+         <div class="contents">
+            <p>
+               Given that A = \(\begin{bmatrix} 3 & 7\\ 4 & 2\\ 4 & 8 \end{bmatrix}\)
+               and B = \(\begin{bmatrix} 6 & 1\\ 3 & 9\\ 5 & 1 \end{bmatrix}\). Find A - B
+
+               $$
+               =
+               \begin{bmatrix}
+               3 & 7\\
+               4 & 2\\
+               4 & 8
+               \end{bmatrix}
+               -
+               \begin{bmatrix}
+               6 & 1\\
+               3 & 9\\
+               5 & 1
+               \end{bmatrix}
+               $$
+
+               $$
+               =
+               \begin{bmatrix}
+               3 - 6 & 7 - 1\\
+               4 - 3 & 2 - 9\\
+               4 - 5 & 8 - 1
+               \end{bmatrix}
+               $$
+
+               $$
+               =
+               \begin{bmatrix}
+               -3& 6\\
+               1 & - 7\\
+               -1 & 7
+               \end{bmatrix}
+               $$
+            </p>
+         </div>
+         <h3>Example 2</h3>
+         <div class="contents">
+            <p>
+               Given that A = \(\begin{pmatrix} 8 & 7\\ 4 & 6 \end{pmatrix}\)
+               and B = \(\begin{pmatrix} 3 & 1\\ 5 & 2 \end{pmatrix}\). Find A - B
+
+               $$
+               =
+               \begin{pmatrix}
+               8 & 7\\
+               4 & 6
+               \end{pmatrix}
+               -
+               \begin{pmatrix}
+               3 & 1\\
+               5 & 2
+               \end{pmatrix}
+               $$
+
+               $$
+               =
+               \begin{pmatrix}
+               8 - 3 & 7 - 1\\
+               4 - 5 & 6 - 2
+               \end{pmatrix}
+               $$
+
+               $$
+               =
+               \begin{pmatrix}
+               5 & 6\\
+               - 1& 4
+               \end{pmatrix}
+               $$
+            </p>
+         </div>
+      </div>
+      <div class="samples">
+         <h1>3. MULTIPLICATION OF MATRICES</h1>
+
+         <h2>a. Multiplying a matrix by a scalar</h2>
+         <div class="contents">
+            <p>
+               $$
+               k\begin{pmatrix}
+               p & r\\
+               r & s
+               \end{pmatrix}
+               $$
+               Multiply each element by the scalar as
+               $$
+               =
+               \begin{pmatrix}
+               kp & kq\\
+               kr & ks
+               \end{pmatrix}
+               $$
+            </p>
+
+
+         </div>
+         <h3>Example</h3>
+         <div class="contents">
+            <p>
+               Given that M = \(\begin{pmatrix} 2 & 6\\ 1 & - 4 \end{pmatrix}\).
+               Calculate 3M.
+
+               $$
+               = 3
+               \begin{pmatrix}
+               2 & 6\\
+               1 & - 4
+               \end{pmatrix}
+               $$
+
+               $$
+               =
+               \begin{pmatrix}
+               2 × 3 & 6 × 3\\
+               1 × 3 & -4 × 3
+               \end{pmatrix}
+               $$
+
+               $$
+               =
+               \begin{pmatrix}
+               6 & 18\\
+               3 & - 12
+               \end{pmatrix}
+               $$
+            </p>
+         </div>
+         <h2>b. Multiplying a matrix and a vector</h2>
+         <div class="contents">
+            <p>
+               <strong><i>NOTE: </i></strong>Number of columns in the matrix must be equal to the number of rows in the vector.
+            </p>
+            $$
+            \begin{bmatrix}
+            a & c\\
+            b & d
+            \end{bmatrix}
+            \begin{bmatrix}
+            x\\
+            y
+            \end{bmatrix}
+            $$
+
+            $$
+            =
+            \begin{bmatrix}
+            ax + dy\\
+            bx + dy
+            \end{bmatrix}
+            $$
+         </div>
+         <h3>Example 1</h3>
+         <div class="contents">
+            <p>
+               Solve \(\begin{bmatrix} 7 & 2\\ 0 & 3 \end{bmatrix}\)
+
+               \(\begin{bmatrix} 4\\ 1 \end{bmatrix}\).
+
+               $$
+               =
+               \begin{bmatrix}
+               7 & 2 \\
+               0 & 3
+               \end{bmatrix}
+
+               \begin{bmatrix}
+               4\\
+               1
+               \end{bmatrix}
+               $$
+
+               $$
+               =
+               \begin{bmatrix}
+               7 × 4 + 2 × 1\\
+               0 × 4 + 3 × 1
+               \end{bmatrix}
+               $$
+
+               $$
+               =
+               \begin{bmatrix}
+               30\\
+               3
+               \end{bmatrix}
+               $$
+            </p>
+         </div>
+         <h3>Example 2</h3>
+         <div class="contents">
+            <p>
+               Find the values of x and y in the following matrix equation:<br>
+               \(\begin{pmatrix} 6 & - 3 \\ 2 & 3 \end{pmatrix}\)
+               \(\begin{pmatrix} x\\y \end{pmatrix}\) = \(\begin{pmatrix} 12\\
+               -4 \end{pmatrix}\)
+
+               $$
+
+               \begin{pmatrix}
+               6x + (-3y)\\
+               2x + 3y
+               \end{pmatrix}
+
+               =
+
+               \begin{pmatrix}
+               12\\
+               - 4
+               \end{pmatrix}
+               $$
+               \(6x - 3y = 12\)......i<br>
+               \(2x + 3y = -4\)......ii<br>
+               Add equation (i) and equation (ii) <br>
+
+               \(8x = 8\)<br>
+               Devide both sides with 8.<br>
+               <br>
+               \(x = 1\)<br>
+               Substitute 1 for x. <br>
+               \(2(1) + 3y = - 4\)<br>
+               \(3y = -4 - 2\)<br>
+               \(3y = - 6\)<br>
+               Devide both sides with 3<br>
+               \(\frac{3y}{3} = \frac{-6}{3}\)<br><br>
+               \(y = - 2\)<br>
+               \(x = 1\)
+            </p>
+         </div>
+
+
+         <h2>c. Multiplying a matrix and a matrix</h2>
+         <div class="contents">
+            <p>
+               <strong><i>NOTE: </i></strong>Number of columns in the matrix
+               must be equal to the number of rows in the second matrix.
+            </p>
+            <p>
+               $$
+               \begin{pmatrix}
+               a & b\\
+               c & d
+               \end{pmatrix}
+
+               \begin{pmatrix}
+               e & f\\
+               g & h
+               \end{pmatrix}
+               $$
+
+               $$
+               =
+               \begin{pmatrix}
+               ae + bg & af + bh\\
+               ce + dg & cf + dh
+               \end{pmatrix}
+               $$
+            </p>
+         </div>
+      </div>
+   </section>
+</body>
+</html>
