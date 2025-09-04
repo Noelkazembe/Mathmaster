@@ -32,14 +32,14 @@
       <div class="lesson">
          <h3>Criteria</h3>
          <ul>
-            <li>Adding matrices</li>
-            <li>Subtracting matrices</li>
-            <li>Multiplying matrices</li>
-            <li>Dividing matrices</li>
+            <li><a href="#add">Adding matrices</a></li>
+            <li><a href="#subtract">Subtracting matrices<a></a></li>
+            <li><a href="#multiply">Multiplying matrices</a></li>
+            
          </ul>
       </div>
 
-      <div class="samples">
+      <div id="add" class="samples">
          <h1>1. ADDITION OF MATRICES</h1>
          <div class="contents">
             <p>
@@ -181,7 +181,7 @@
             </p>
          </div>
       </div>
-      <div class="samples">
+      <div id="subtract" class="samples">
          <br>
          <h1>2. SUBTRACTION OF MATRICES</h1>
          <div class="contents">
@@ -303,7 +303,7 @@
             </p>
          </div>
       </div>
-      <div class="samples">
+      <div id="multiply" class="samples">
          <h1>3. MULTIPLICATION OF MATRICES</h1>
 
          <h2>a. Multiplying a matrix by a scalar</h2>
@@ -377,7 +377,7 @@
             $$
             =
             \begin{bmatrix}
-            ax + dy\\
+            ax + cy\\
             bx + dy
             \end{bmatrix}
             $$
@@ -447,6 +447,7 @@
 
                \(8x = 8\)<br>
                Devide both sides with 8.<br>
+               \(\frac{8x}{8} = \frac{8}{8}\)
                <br>
                \(x = 1\)<br>
                Substitute 1 for x. <br>
@@ -464,7 +465,7 @@
          <h2>c. Multiplying a matrix and a matrix</h2>
          <div class="contents">
             <p>
-               <strong><i>NOTE: </i></strong>Number of columns in the matrix
+               <strong><i>NOTE: </i></strong>Number of columns in the first matrix
                must be equal to the number of rows in the second matrix.
             </p>
             <p>
@@ -489,7 +490,198 @@
                $$
             </p>
          </div>
+         <h3>Example 1</h3>
+         <div class="contents">
+            <p>
+               Given that matrix M = 
+               \(\begin{pmatrix} 
+               3 & 5\\
+               -1 & 1
+               \end{pmatrix}\)
+               
+               and V = \(\begin{pmatrix} 
+               -1 & 1\\
+               0 & 2
+               \end{pmatrix}\). Find MV - M
+               <br>
+               1. Find matrix MV:
+               
+               $$
+               MV = 
+               \begin{pmatrix}
+               3 & 5\\
+               -1 & 1
+               \end{pmatrix}
+               
+               \begin{pmatrix}
+               -1 & 1\\
+               0 & 2
+               \end{pmatrix}
+               $$
+               
+               $$
+               =
+               \begin{pmatrix}
+               3 ×(- 1) + 5 × 0 & 3 × 1 + 5×2\\
+               -1 × (-1) + 1 × 0 & 1 × -1 + 1 × 2
+               \end{pmatrix}
+               $$
+               
+               $$
+               
+              MV =
+              \begin{pmatrix}
+               -3 & 13\\
+               1 & 1
+               \end{pmatrix}
+               $$
+               
+               <br>
+               2. subtract MV from V 
+               $$
+               MV - V =
+               \begin{pmatrix}
+               -3 & 14\\
+               1 & 1
+               \end{pmatrix}
+               -
+               \begin{pmatrix}
+               3 & 5\\
+               -1 & 1
+               \end{pmatrix}
+               $$
+               
+               $$
+               =
+               \begin{pmatrix}
+               -3 -3 & 13 - 5\\
+               1 - (-1) & 1 - 1
+               \end{pmatrix}
+               $$
+               
+               $$
+               MV - V = 
+               \begin{pmatrix}
+               -6 & 8\\
+               2 & 0
+               \end{pmatrix}
+               $$
+               <p><i><strong>NOTE: </strong></i>Matrix MV ≠ VM.</p>
+            </p>
+         </div>
+         <h3>Example 2</h3>
+         <div class="contents">
+            <p>
+               Given that M = \(\begin{pmatrix} a & d\\1 & 2 \end{pmatrix}\) and
+               N =\(\begin{pmatrix} 5 & 2 \\ 1 & 3\end{pmatrix}\). Find MN.
+            </p>
+            <p>
+               $$
+               =
+               \begin{pmatrix} a & d\\1 & 2 \end{pmatrix} 
+               
+               \begin{pmatrix} 5 & 2 \\ 1 & 3\end{pmatrix}\
+               $$
+               
+               $$
+               =
+               \begin{pmatrix}
+               a×5 + d× 1 & a × 2 + d × 3\\ 1×5 + 2×1 & 1×2 + 2×3
+               \end{pmatrix}
+               $$
+               
+               $$
+               =
+               \begin{pmatrix}
+               5a + d & 2a + 3d\\
+               7 & 8
+               \end{pmatrix}
+               $$
+               
+            </p>
+         </div>
+         <h3>Example 3</h3>
+         <div class="contents">
+            <p>
+               Given that M = \(\begin{pmatrix} 3 & 1\\ 6 & 0 \end{pmatrix}\).
+               find M².
+            </p>
+            <p>
+               <i><strong>NOTE: </strong></i>M² = M × M
+            </p>
+            <p>
+               $$
+               =
+               \begin{pmatrix}
+               3 & 1 \\
+               6 & 0
+               \end{pmatrix}
+               
+               \begin{pmatrix}
+               3 & 1\\
+               6 & 0 \end{pmatrix}
+               $$
+               
+               $$
+               =
+               \begin{pmatrix}
+               3 × 3 + 1 × 6 & 3 × 1 + 1 × 0\\
+               6 × 3 + 0× 5 & 6 × 1 + 0 × 0
+               \end{pmatrix}
+               $$
+               
+               $$
+               =\begin{pmatrix}
+               15 & 3\\
+               18 & 6
+               \end{pmatrix}
+               $$
+            </p>
+         </div>
       </div>
+      <div class="samples">
+      <h1 style="color: #891d1d;">QUESTIONS</h1>
+      <h3>Exercise 1</h3>
+         <div class="exercise">
+            Given that matrix K = \(\begin{pmatrix} 2 & 4 \\ 3 & 0
+            \end{pmatrix}\) and matrix M = \(\begin{pmatrix} 1 & -2 \\ 6 & 4
+            \end{pmatrix}\). Find K - M².
+            
+         </div>
+         <h3>Exercise 2</h3>
+         <div class="exercise">
+            <p>Show that \(\begin{pmatrix} 4 & 0 \\ 1 & 2
+            \end{pmatrix}\)
+            \(\begin{pmatrix} -3 & 2 \\ 5 & -1
+            \end{pmatrix}\)
+            +
+            \(\begin{pmatrix} 8 & -12 \\ -8 & -1
+            \end{pmatrix}\) is a zero matrix.
+            </p>
+            <p><i><strong>NOTE: </strong></i>a zero matrix is a matrix whereby
+            all elements are zeros</p>
+         </div>
+         <h3>Exercise 3</h3>
+         <div class="exercise">
+            <p>
+               Given that A = \(\begin{pmatrix} 1 & 0 \\ 3 & 2
+            \end{pmatrix}\), B = \(\begin{pmatrix} x & 0 \\ 1 & 3
+            \end{pmatrix}\) and AB = BA. Find the BB value of x.
+            </p>
+         </div>
+         <h3>Exercise 4</h3>
+         <div class="exercise">
+            <p>
+               if A = \(\begin{pmatrix} y & 2 \\ 2 & -y
+            \end{pmatrix}\) and A² = \(\begin{pmatrix} 5 & 0 \\ 0 & 5
+            \end{pmatrix}\), calculate the value of y.
+            </p>
+         </div>
+      </div>
+         
    </section>
 </body>
+<footer>
+   <p>© MathMaster 2025</p>
+   </footer>
 </html>
